@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="order_confirm_warning_form" model="ir.ui.view">
+    <field name="name">order.confirm.warning.form</field>
+    <field name="model">order.confirm.warning</field>
+    <field name="arch" type="xml">
+      <form string="Confirmation Warning">
+        <field name="res_model" invisible="1"/>
+        <field name="res_id" invisible="1"/>
+        <field name="summary" nolabel="1" readonly="1"/>
+        <footer>
+          <button name="action_confirm_order" string="Confirm" type="object"
+                  class="btn-primary" data-hotkey="q"/>
+          <button string="Cancel" special="cancel" data-hotkey="x"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+</odoo>
